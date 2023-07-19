@@ -20,14 +20,12 @@ const App = () => {
           setBebidas(data.drinks);
         }, 1500);
       } catch (error) {
-        console.log(error);
+        Swal.fire({ title: "Hubo un error", icon: "error" });
       }
     };
 
     obtenerBebidas();
   }, [alcohol]);
-
-  console.log(alcohol);
 
   const handleModal = async (id) => {
     try {
@@ -43,7 +41,7 @@ const App = () => {
         imageAlt: "Custom image",
       });
     } catch (error) {
-      console.log(error);
+      Swal.fire({ title: "Hubo un error", icon: "error" });
     }
   };
 

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 1.6rem;
+  background-color: #e4e4e4;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.inicio {
+  margin-top: 3rem;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.opciones__con {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: #ffffff;
+  background-color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.opciones__con:hover {
+  background-color: #15803d;
+}
+
+.opciones__con-deshabilitado {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: #000;
+  background-color: #dcfce7;
+  border: 2px solid #dcfce7;
+  pointer-events: none;
+}
+
+.opciones__sin {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: #ffffff;
+  background-color: #b91c1c;
+  border: 2px solid #b91c1c;
+}
+
+.opciones__sin-deshabilitado {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: #000;
+  background-color: #fee2e2;
+  border: 2px solid #fee2e2;
+  pointer-events: none;
+}
+
+.opciones__sin:hover {
+  background-color: #991b1b;
+}
+
+@media (min-width: 768px) {
+  .opciones {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .opciones button {
+    width: 30%;
+  }
+}
+
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card__imagen img {
+  aspect-ratio: 10/5;
+}
+
+.card__contenido {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilos base del botón */
+.card__boton {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: #ffffff;
+  background-color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+.card__boton:hover {
+  background-color: #1565c0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}
